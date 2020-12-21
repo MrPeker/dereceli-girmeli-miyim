@@ -102,6 +102,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Beaufort', serif;
+    text-align: center;
 }
 
 .major-title--frame.wings .wing-text {
@@ -283,4 +284,33 @@ p a {
     letter-spacing: 0.025em;
     color: #F2E9DA;
     font-family: 'Beaufort', serif;
+}
+
+@media screen and (max-width: 1024px) {
+    .major-title--frame .minor-title {
+        width: 100%
+    }
+
+    .major-title--frame .major-title {
+        font-size: 1.5em;
+    }
+
+    .medium, .small, p {
+        margin: 20px auto 20px !important;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        padding: 20px;
+    }
+
+    .major-title--frame .minor-title {
+        line-height: 2;
+    }
+
+    .major-title--frame .major-title {
+        line-height: 1.25;
+    }
 }
