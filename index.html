@@ -40,7 +40,7 @@
             return xmlHttp.responseText;
         }
 
-        var theVideos = httpGet('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLbAFXJC0J5GZHUtGea_zQR0OyD3UBuw9s&key=AIzaSyDg5WW8Otlwn5B3_1wVLbFk_XiAtkrT7r4');
+        var theVideos = httpGet('https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLbAFXJC0J5GZHUtGea_zQR0OyD3UBuw9s&key=AIzaSyAMf_7dexeVkX_Jo2LjSvIpA16-uYi37vk');
         var videoCount = JSON.parse(theVideos).items.length;
         var randomNumber = Math.floor((Math.random() * videoCount));
 
@@ -95,7 +95,7 @@
         var done = false;
 
         function onPlayerStateChange(event) {
-            
+
         }
 
         function stopVideo() {
