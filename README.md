@@ -1,0 +1,2 @@
+# dereceli-girmeli-miyim
+ 
