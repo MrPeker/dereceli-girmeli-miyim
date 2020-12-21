@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Beaufort';
+    src: url("../fonts/Beaufort-Regular.woff2") format("woff2"),url("../fonts/Beaufort-Regular.woff") format("woff");
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'Beaufort';
+    src: url("../fonts/Beaufort-Bold.woff2") format("woff2"),url("../fonts/Beaufort-Bold.woff") format("woff");
+    font-weight: 700
+}
+
+body {
+    overflow: hidden;
+}
+
+#vid {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start {
+        font-family: "Beaufort", serif;
+}
+
+.first {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.content {
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+}
+
+.header {
+    font-size: 4.5em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    margin: 0;
+    color: #F2E9DA;
+}
+
+.major-title--frame .major-title {
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.175em;
+    line-height: 1.75;
+    margin: 0;
+    color: #F2E9DA;
+    position: relative
+}
+
+@media (max-width: 850px) {
+    .major-title--frame .major-title {
+        font-size: 1.2em
+    }
+}
+
+.major-title--frame .minor-title {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Beaufort', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #785a28;
+    letter-spacing: 0.13em;
+    line-height: 3;
+    font-size: 0.6em
+}
+
+.major-title--frame.wings .major-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Beaufort', serif;
+}
+
+.major-title--frame.wings .wing-text {
+    margin: 0 .2em
+}
+
+.major-title--frame.wings .wing {
+    height: 10px;
+    flex: 1;
+    position: relative
+}
+
+.major-title--frame.wings .wing:before,
+.major-title--frame.wings .wing:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #785a28
+}
+
+.major-title--frame.wings .wing:before {
+    top: 0;
+    width: 100%
+}
+
+.major-title--frame.wings .wing:after {
+    bottom: 0;
+    width: 80%
+}
+
+.major-title--frame.wings .wing-left:before,
+.major-title--frame.wings .wing-left:after {
+    right: 0;
+    background: linear-gradient(to right, #785a28 80%, transparent)
+}
+
+.major-title--frame.wings .wing-right:before,
+.major-title--frame.wings .wing-right:after {
+    left: 0;
+    background: linear-gradient(to left, #785a28 80%, transparent)
+}
+
+.medium {
+    display: block;
+    margin-left: 20vw !important;
+    width: 60vw;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Beaufort', serif;
+    color: #c8aa6e;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    line-height: 1.2;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0.25em 0 0.5em;
+}
+
+.small {
+    display: block;
+    margin-left: 30vw !important;
+    width: 40vw;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    color: #a09b8c;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.action {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: "Beaufort", serif;
+}
+
+p {
+    display: block;
+    width: 60vw !important;
+    margin-left: 20vw !important;
+    box-sizing: border-box;
+    color: rgb(160, 155, 140);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.192px;
+    line-height: 16px;
+    margin-top: 10px !important;
+    text-align: center;
+    text-size-adjust: 100%;
+    width: 1050px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
+}
+
+p a {
+    font-weight: 700;
+    border-bottom: 1px solid #a09b8c;
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 1em
+        text-align: center;
+}
+
+.section-title .section-title--text {
+    margin: 0 1.5em;
+    font-weight: 700;
+    text-align: center;
+    max-width: 80vw;
+}
+
+.section-title .section-title--accent {
+    flex: 1;
+    height: 1px;
+    background: #5d471d;
+    position: relative
+}
+
+.section-title .section-title--accent:after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #5d471d
+}
+
+.section-title .section-title--accent.accent-left {
+    background: linear-gradient(to right, transparent 0%, #5d471d 50%)
+}
+
+.section-title .section-title--accent.accent-left:after {
+    transform: rotate(-45deg) translateY(-4px);
+    right: -10px
+}
+
+.section-title .section-title--accent.accent-right {
+    background: linear-gradient(to left, transparent 0%, #5d471d 50%)
+}
+
+.section-title .section-title--accent.accent-right:after {
+    transform: rotate(45deg) translateY(-4px);
+    left: -10px
+}
+
+.result {
+    display: none;
+}
+
+.result .section-title {
+    font-size: 1.6em;
+}
+
+.result-text {
+    margin: 0 1.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #F2E9DA;
+    font-family: 'Beaufort', serif;
+}
