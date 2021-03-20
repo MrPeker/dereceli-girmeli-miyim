@@ -6,4 +6,4 @@ Dereceli girmeli misiniz ögrenmek için [dereceli-girmeli-miyim.vercel.app](htt
 
 Unutmadan, dereceli maçlarınızda bol şans :) 
 
-> Wild Rift'te akarız derseniz "ARES MrPeker" ekleyebilirsiniz.
+> Wild Rift'te akarız derseniz "MrPeker" ekleyebilirsiniz.
